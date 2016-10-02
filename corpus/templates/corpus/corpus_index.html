@@ -1,0 +1,13 @@
+<table>
+<tr>
+    <th>原言語</th>
+    <th>目的言語</th>
+</tr>
+{% for para in parallelcorpus.parallelsentence_set.all %}
+        <tr>
+        <td>{{ para.src }}</td>
+        <td>{{ para.tgt }}</td>
+        </tr>
+{% endfor %}
+</table>
+
